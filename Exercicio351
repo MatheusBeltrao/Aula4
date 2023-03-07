@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Exec351 {
+
+
+    public static void main(String[] args0) {
+        Scanner scan = new Scanner(System.in);
+        int L, num;
+        String[] nomes = new String[5];
+        for (L = 0; L < 5; L++) {
+            System.out.println("nome " + (L+1) + ":");
+        nomes[L] = scan.nextLine();
+            
+        }
+        System.out.println("\nDigite o numero  da pessoa:");
+        num = scan.nextInt();
+        while(num < 1 || num > 5){
+            System.out.println("\nNúmero fora de intervalo!");
+            System.out.println("Digite o numero  da pessoa: ");
+            num = scan.nextInt();
+
+        }
+            System.out.println("\n"+ nomes[num - 1]);
+    }
+}
+
+
